@@ -48,7 +48,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -1417,11 +1417,20 @@ Wickmann</description>
 <text x="-8.255" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="INDUCTOR-PTH-13MM">
-<circle x="0" y="0" radius="5.715" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="5.715" width="0.1778" layer="21"/>
 <text x="5.08" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
 <text x="5.08" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <pad name="A" x="-3.175" y="0" drill="1.1" diameter="1.9304"/>
 <pad name="B" x="3.175" y="0" drill="1.1" diameter="1.9304" rot="R90"/>
+</package>
+<package name="POLAR-CAP-PTH-10MM">
+<circle x="0" y="0" radius="4.572" width="0.1778" layer="21"/>
+<pad name="B" x="2.54" y="0" drill="1.1" diameter="1.9304"/>
+<pad name="A" x="-2.54" y="0" drill="1.1" diameter="1.9304" shape="square"/>
+<text x="3.81" y="-3.81" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-2.54" y1="3.175" x2="-2.54" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1778" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1508,7 +1517,7 @@ Wickmann</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="INDUCTOR-PTH-13MM">
+<symbol name="INDUCTOR">
 <wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
@@ -1517,6 +1526,19 @@ Wickmann</description>
 <pin name="B" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <text x="-5.08" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="POLAR-CAP">
+<wire x1="-3.048" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="3.048" y2="1.27" width="0.254" layer="94"/>
+<pin name="A" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="B" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="3.048" x2="-2.54" y2="2.032" width="0.254" layer="94"/>
+<wire x1="-3.048" y1="2.54" x2="-2.032" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.048" y1="-1.27" x2="3.048" y2="-1.27" width="0.254" layer="94" curve="-87.397438"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2001,10 +2023,26 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 </deviceset>
 <deviceset name="INDUCTOR">
 <gates>
-<gate name="G$1" symbol="INDUCTOR-PTH-13MM" x="0" y="0"/>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="INDUCTOR-PTH-13MM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLAR-CAP">
+<gates>
+<gate name="G$1" symbol="POLAR-CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLAR-CAP-PTH-10MM">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
