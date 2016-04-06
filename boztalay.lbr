@@ -1617,6 +1617,49 @@ Wickmann</description>
 <circle x="-12.7" y="21.59" radius="1.79605" width="0.127" layer="21"/>
 <circle x="12.7" y="21.59" radius="1.79605" width="0.127" layer="21"/>
 </package>
+<package name="TSSOP-28">
+<smd name="15" x="-4.226559375" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="16" x="-3.57631875" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="17" x="-2.92608125" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="18" x="-2.275840625" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="19" x="-1.6256" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="20" x="-0.975359375" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="21" x="-0.32511875" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="22" x="0.32511875" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="23" x="0.975359375" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="24" x="1.6256" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="25" x="2.275840625" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="26" x="2.92608125" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="27" x="3.57631875" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="28" x="4.226559375" y="-2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="14" x="-4.226559375" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="13" x="-3.57631875" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="12" x="-2.92608125" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="11" x="-2.275840625" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="10" x="-1.6256" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="9" x="-0.975359375" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="8" x="-0.32511875" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="7" x="0.32511875" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="6" x="0.975359375" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="5" x="1.6256" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="4" x="2.275840625" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="3" x="2.92608125" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="2" x="3.57631875" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<smd name="1" x="4.226559375" y="2.9718" dx="1.778" dy="0.4318" layer="1" rot="R90"/>
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
+<circle x="3.81" y="1.27" radius="0.635" width="0.127" layer="21"/>
+</package>
+<package name="PJ-037A">
+<pad name="POS" x="0" y="0" drill="3.2" diameter="4.826"/>
+<pad name="NEG" x="-5.9944" y="0" drill="2.8" diameter="4.445"/>
+<wire x1="-13.97" y1="5.08" x2="-13.97" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="-13.97" y1="-5.08" x2="3.81" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="5.08" width="0.254" layer="21"/>
+<wire x1="3.81" y1="5.08" x2="-13.97" y2="5.08" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HEXFET_N">
@@ -1786,6 +1829,58 @@ Wickmann</description>
 <wire x1="15.24" y1="-2.54" x2="15.24" y2="10.16" width="0.254" layer="94"/>
 <wire x1="15.24" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="10.16" x2="-15.24" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MAX6921/31">
+<pin name="VCC" x="-15.24" y="10.16" length="middle"/>
+<pin name="VBB" x="-15.24" y="7.62" length="middle"/>
+<pin name="GND" x="-15.24" y="5.08" length="middle"/>
+<pin name="DIN" x="-15.24" y="-2.54" length="middle"/>
+<pin name="DOUT" x="-15.24" y="-5.08" length="middle"/>
+<pin name="CLK" x="-15.24" y="0" length="middle"/>
+<pin name="LOAD" x="-15.24" y="-7.62" length="middle"/>
+<pin name="BLANK" x="-15.24" y="-10.16" length="middle"/>
+<pin name="OUT10" x="17.78" y="-1.27" length="middle" rot="R180"/>
+<pin name="OUT11" x="17.78" y="-3.81" length="middle" rot="R180"/>
+<pin name="OUT12" x="17.78" y="-6.35" length="middle" rot="R180"/>
+<pin name="OUT13" x="17.78" y="-8.89" length="middle" rot="R180"/>
+<pin name="OUT14" x="17.78" y="-11.43" length="middle" rot="R180"/>
+<pin name="OUT15" x="17.78" y="-13.97" length="middle" rot="R180"/>
+<pin name="OUT16" x="17.78" y="-16.51" length="middle" rot="R180"/>
+<pin name="OUT17" x="17.78" y="-19.05" length="middle" rot="R180"/>
+<pin name="OUT18" x="17.78" y="-21.59" length="middle" rot="R180"/>
+<pin name="OUT19" x="17.78" y="-24.13" length="middle" rot="R180"/>
+<pin name="OUT9" x="17.78" y="1.27" length="middle" rot="R180"/>
+<pin name="OUT8" x="17.78" y="3.81" length="middle" rot="R180"/>
+<pin name="OUT7" x="17.78" y="6.35" length="middle" rot="R180"/>
+<pin name="OUT6" x="17.78" y="8.89" length="middle" rot="R180"/>
+<pin name="OUT5" x="17.78" y="11.43" length="middle" rot="R180"/>
+<pin name="OUT4" x="17.78" y="13.97" length="middle" rot="R180"/>
+<pin name="OUT3" x="17.78" y="16.51" length="middle" rot="R180"/>
+<pin name="OUT2" x="17.78" y="19.05" length="middle" rot="R180"/>
+<pin name="OUT1" x="17.78" y="21.59" length="middle" rot="R180"/>
+<pin name="OUT0" x="17.78" y="24.13" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-12.7" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="-27.94" x2="15.24" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-27.94" x2="15.24" y2="27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="27.94" x2="0" y2="27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="27.94" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PJ-037A">
+<pin name="POS" x="7.62" y="5.08" length="middle" rot="R180"/>
+<pin name="NEG" x="7.62" y="-2.54" length="middle" rot="R180"/>
+<wire x1="2.54" y1="6.35" x2="2.54" y2="3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.556" x2="-10.16" y2="3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="6.35" x2="-10.16" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="3.556" x2="-10.16" y2="6.35" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-6.35" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-1.27" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2379,6 +2474,64 @@ Source: http://www.irf.com/product-info/datasheets/data/irf3704.pdf</description
 <connect gate="G$1" pin="G" pad="G"/>
 <connect gate="G$1" pin="GRID" pad="GRID"/>
 <connect gate="G$1" pin="H" pad="H"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX6921/31">
+<gates>
+<gate name="G$1" symbol="MAX6921/31" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-28">
+<connects>
+<connect gate="G$1" pin="BLANK" pad="20"/>
+<connect gate="G$1" pin="CLK" pad="22"/>
+<connect gate="G$1" pin="DIN" pad="6"/>
+<connect gate="G$1" pin="DOUT" pad="9"/>
+<connect gate="G$1" pin="GND" pad="21"/>
+<connect gate="G$1" pin="LOAD" pad="23"/>
+<connect gate="G$1" pin="OUT0" pad="5"/>
+<connect gate="G$1" pin="OUT1" pad="4"/>
+<connect gate="G$1" pin="OUT10" pad="19"/>
+<connect gate="G$1" pin="OUT11" pad="18"/>
+<connect gate="G$1" pin="OUT12" pad="17"/>
+<connect gate="G$1" pin="OUT13" pad="16"/>
+<connect gate="G$1" pin="OUT14" pad="15"/>
+<connect gate="G$1" pin="OUT15" pad="14"/>
+<connect gate="G$1" pin="OUT16" pad="13"/>
+<connect gate="G$1" pin="OUT17" pad="12"/>
+<connect gate="G$1" pin="OUT18" pad="11"/>
+<connect gate="G$1" pin="OUT19" pad="10"/>
+<connect gate="G$1" pin="OUT2" pad="3"/>
+<connect gate="G$1" pin="OUT3" pad="2"/>
+<connect gate="G$1" pin="OUT4" pad="1"/>
+<connect gate="G$1" pin="OUT5" pad="28"/>
+<connect gate="G$1" pin="OUT6" pad="27"/>
+<connect gate="G$1" pin="OUT7" pad="26"/>
+<connect gate="G$1" pin="OUT8" pad="25"/>
+<connect gate="G$1" pin="OUT9" pad="24"/>
+<connect gate="G$1" pin="VBB" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PJ-037A">
+<gates>
+<gate name="G$1" symbol="PJ-037A" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="PJ-037A">
+<connects>
+<connect gate="G$1" pin="NEG" pad="NEG"/>
+<connect gate="G$1" pin="POS" pad="POS"/>
 </connects>
 <technologies>
 <technology name=""/>
